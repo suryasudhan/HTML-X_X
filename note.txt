@@ -1,0 +1,550 @@
+                                      
+                                     HTML
+
+             @> HTML - Hyper Text Markup Language 
+
+             => Hyper-text : Refers to links that connect the web pages to one another , either within a single website or between websites
+
+             => Markup : HTML uses "Markup" to annotate text , images , and other content for display in a {WEB BROWSER]
+
+              # HTML Markup includes special " elements" such as  <head>, <title>, <body>, <header>, <footer>, <article>, <section>, <p>, <div>, <span>, <img>, <aside>, <audio>, <canvas>, <datalist>, <details>,<embed>, <nav>, <search>, <output>, <progress>, <video>, <ul>, <ol>, <li> and many others                          
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+<!DOCTYPE html> ....... telling the BROWSER it's a HTML file 
+
+<html lang="eng"> ...... Language is english
+
+(<head>
+
+   <meta> .... meta is provides info of the details includes {autour and project details}
+  
+   <meta charset="UTF-8"> ..... an HTML tag that tells a web BROWSER to use UTF-8 encoding for the web page-This ensures all characters , including letters,symbols,and emojis from various Language are displayed correctly across different BROWSER and devices 
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> .... providing a screen ratio
+
+  ]
+
+<body>
+                      -------content to display-------
+</body>
+
+</html>
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                             ELEMENTS & ATTRIBUTES
+
+          @> ELEMENTS :  [<link rel="stylesheet" href="./style.css" />] -> the complete tag is knowns as {ELEMENTS]
+
+          @> ATTRIBUTES : by using inside the elements is knowns as ATTRIBUTES like.... rel , href , and more on ....          
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                                  HTML-TAGS
+
+                  @> HEADING TAGS  : [h1,h2,h3,h4,h5,h6]
+
+                  @> PARAGRAPH TAG : <P> - used for write the connect
+
+                  @> BRAKE TAG     : <br/> - used to be brake the line 
+
+                  @> HORIZONTAL TAG: <hr> - used to be provides the horizontal line in the document 
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                              SELF CLOSING TAGS
+
+                        { meta , br , hr , link , img}            
+ 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                                TAGS - DETAILS 
+
+          @> <a> - ancour tag 
+
+            ->  <a href="" target="_blank"></a> + it used to redirect web page to another web page , it act like as links to other pages
+
+            ->  herf - is used in a ancour tag to provides the link details
+
+            -> target - by giving as (blank] due to (redirect to another loading page]                        
+
+
+          @> <img> - image tag
+
+            ->   <img src="" alt=""> + it's used for placing a image photo 
+
+            ->  The img full tag [ <img src="xxxxx" alt=""-it giving picture name because of if the img doesn't load , then it gives the picture details ]
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                              TYPE OF LIST IN HTML
+
+                 @> there are 2 types of lise -> 
+
+                      * order list   - ol tag
+
+                      * unorder list - ul tag               
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                                ENTITES IN HTML
+
+                   @> Providing the space between the words 
+
+                          * &nbsp; -> giving space 
+                          
+                          * &gt;   -> providing (>]
+                          
+                          * &lt;   -> providing (<]   
+                                  
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                            SEMANTIC-TAGS IN HTML
+
+          [
+
+             # SEO - better for search engine optimise 
+             
+             # ACCESSIBILIT - screen reader can navigate better
+
+             # CLENER CODE - HTML looks less like chaos and more like a well-planned neighborhood
+
+             # CONSISTENCY + MORDERN STANDARDS - real devs use SEMANTIC tags , it's tradition 
+
+          ]                 
+
+  {header , nav , section , article , aside , main , figure & figcaption , mark , time , footer }
+
+......................................................................................
+
+           
+       @> <HEADER> - act as "profile section" of the webpage | appears at the TOP of the pages or section
+
+             CONTAINS : [logo , title , navigation(sometimes) , intro]
+
+
+
+
+       @> <NAV>   - act as "navigation bar" | bacically the VIP pass to move around your site 
+
+                          <nav>
+                              <a href="#home">Home</a>
+                              <a href="#about">About</a>
+                          </nav>
+
+
+
+        @> <SECTION> - act as a big container that groups related content | like chapters in a book
+
+
+
+
+        @> <ARTICLE> - act as a independent content | stands on its own , could be read alone and sill make sense 
+
+          EX :  blog post , news article , producr card , user profile 
+
+
+
+
+        @> <ASIDE> - act as a extra info | not the main story   
+
+          THINK : side bars , ads , related links 
+             
+
+         
+        @> <MAIN> - It act as a CORE content of the page 
+
+
+       
+
+        @> <FIGURE>&<FIGCAPTION> - for images with description
+
+                <figure>
+                      <img src="cat.jpg" alt="Smug cat">
+                      <figcaption>Bro knows he's cute.</figcaption>
+                </figure>
+
+
+
+
+         @> <MARK> - highlights text like you're studying last minute for finals        
+
+                <p>Don’t forget to <mark>save your work</mark>.</p>
+
+
+
+
+         @> <TIME> - represents dates or time 
+
+                 <time datetime="2025-01-15">Jan 15</time>
+
+
+
+         @> <DL> -DEFINITION LIST (btw it's old school of HTML)
+
+                * dl - the whole dictionary list 
+                * dt - the word
+                * dd - the meaning
+
+                <dl>
+                  <dt>JavaScript</dt>
+                  <dd>A programming language</dd>
+                  <dd>The reason devs lose hair early</dd>
+                </dl>
+
+
+
+         @> <FOOTER> - It placed on the bottom-most part | where copyrights , contacts , links , and all boring-but-necessary stuff live
+
+
+                              html
+                              └── head
+                              └── body
+                                    ├── header
+                                    ├── main
+                                    │     ├── article
+                                    │     └── section
+                                    └── footer
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                         
+              TABLE IN HTML - [horizontal is ROW][vertical is COLUMN]
+
+            @> A TABLE is basically a grid used to display data in rows and columns 
+
+
+          # THE MAIN TAGS IN TABLE - [<table>,<tr>,<th>,<td>, - <thead>,<tbody>,<tfoot>]              
+
+                          * <table> - the main container 
+
+                          * <tr> - table row 
+
+                          * <th> - table header 
+
+                          * <td> - table data 
+
+                          # <thead> - for the top row 
+
+                          # <tbody> - for the content
+
+                          # <tfoot> - for totals or summary(optional)
+
+......................................................................................
+
+
+                            ATTRIBUTES IN TABLE 
+
+      * BORDER - adds border : <table border="1">
+
+      * COLSPAN - one cell spans multiple columns : <td colspan="2">Merged cell</td>
+
+      * ROWSPAN - one spans multiple rows : <td rowspan="3">Group</td>
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                               FORMS IN HTML
+
+         @> A FORM is basically a collection of input fields where users type stuff , click stuff , choose stuff - and then it gets sent somewhere✈️                      
+
+                LIKE :  [login form , signup form , feedback form , payment , search bar] 
+
+
+         🏛️ The <form> Tag - this is the container that holds everything 
+
+         {
+          <form action="/submit" method="POST">
+               <!-- form content here -->
+          </form>
+
+           
+            @> KEY ATTRIBUTES -> 
+
+                # action = "" - where the data should go (backend URL)
+
+
+                # method = "" - how the data is sent 
+                     
+                        * "GET"  - data visible in URL
+                        * "POST" - data hidden from URL (safer)               
+          ]
+
+
+......................................................................................
+
+
+                            🔧 The Form Element All-Stars 
+
+                            * These are your main players 
+
+      @) <input> - The OG                
+          
+            -> TEXT-field    : <input type="text" placeholder="Enter your name">
+ 
+            -> PASSWORD      : <input type="password">
+
+            -> EMAIL         : <input type="email">
+
+            -> NUMBER        : <input type="number">
+
+            -> CHECK-BOX     : <input type="checkbox"> I agree
+
+            -> RADIO BUTTON  : 
+                  { <input type="radio" name="gender" value="male"> Male
+                  <input type="radio" name="gender" value="female"> Female
+                  }
+
+            -> SUBMIT BUTTON : <input type="submit" value="Submit">
+
+
+       @) <lable> - For ACCESSIBLITY
+
+           [ 
+                  CONNECTS TEXT TO INPUT - 
+                          <label for="username">Name:</label>
+                          <input type="text" id="username">
+                    
+                    ]
+
+
+       @) <textarea> - BIG TEXT BOX
+
+          -> USEFUL for messages , comments , description 
+
+             <textarea rows="4" cols="30"></textarea>     
+
+
+       @) <select> & <option> — Dropdown Menu    
+
+                <select>
+                    <option>select country</option>
+                    <option>Japan</option>
+                    <option>amarica</option>
+                </select>        
+
+
+        @) <button> - [More flexible then <input type="submit">
+
+             -> <button type="submit">SEND</button> )       
+
+......................................................................................
+     
+                       🎯 Important Things to Remember
+
+              ✔ name attribute is crucial - Without it, data won’t be sent.
+
+                        -> <input name="username" type="text">
+
+              ✔ Use required for mandatory fields 
+
+                        -> <input type="email" required>
+
+              ✔ Always pair labels + inputs 
+
+                        -> Helps accessibility.
+
+              ✔ GET for search bars   
+
+                        -> POST for login/signup
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+ 😴 FORMS EX : 1
+
+                <label for="food"> FOODS LIST</label> <br />
+                  &nbsp; &nbsp;
+
+                  <select name="food" id="food">
+                    <!--  -->
+                    <optgroup label="TIFFIN">
+                      <option value="idily">idily</option>
+                      <option value="poori">poori</option>
+                      <option value="dosai">dosai</option>
+                    </optgroup>
+
+                    <!--  -->
+                    <optgroup label="LUNCH">
+                      <option value="briyani">briyani</option>
+                      <option value="meals">meals</option>
+                      <option value="chapathi">chapathi</option>
+                    </optgroup>
+                    <!--  -->
+                    <optgroup label="DINNER">
+                      <option value="noodels">noodels</option>
+                      <option value="nan">nan</option>
+                      <option value="icecream">icecream</option>
+                    </optgroup>
+                  </select>
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+  😒 FORMS EX : 2 
+
+            [ INPUT id and DATALIST id should be same as it is )
+
+        <label for="favfood">FAV FOODS:</label><br><br>&nbsp;&nbsp;
+        <input type="text" name="favfood" id="favfood" list="food-list">
+            <datalist id="food-list">
+                  <option value="magiee">
+                  <option value="gulab jamun">
+                  <option value="Pizza">
+                  <option value="kfc chicken">
+                  <option value="others">
+            </datalist>
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+  😗 FORMS EX : 3
+
+      [ BY USING RADIO BUTTON-NAME must be same as to all | {vale}-must be mentioned)
+
+          <fieldset>
+                <legend>
+                  <strong>EDU-DETAILS</strong>
+                </legend>
+
+                <p>
+                  <label for="10th">10th</label>
+                  <input type="radio" name=" education" id="10th" value="10th" />
+                </p>
+                <p>
+                  <label for="12th">12th</label>
+                  <input type="radio" name=" education" id="12th" value="12th" />
+                </p>
+                <p>
+                  <label for="degree">Degree</label>
+                  <input type="radio" name=" education" id="degree" value="degree" />
+                </p>
+          </fieldset>
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+  🤔 FORMS EX : 4
+
+          [ BY USING CHECK-BOX we can't use same NAME to all* insted we have to use different NAMES |  {vale}-must be mentioned)
+
+
+            <fieldset>
+                  <legend><strong>SKILS</strong></legend>
+                      <p>
+                        <label for="html">HTML</label>
+                        <input type="checkbox" name="html" id="html" value="html">
+                      </p>
+                      <p>
+                        <label for="css">CSS</label>
+                        <input type="checkbox" name="css" id="css" value="css">
+                      </p>
+                      <p>
+                        <label for="js">JAVASCRIPT</label>
+                        <input type="checkbox" name="js" id="js" value="js" >
+                      </p>
+         </fieldset>
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+                      🐦‍🔥 DIFFERENCE  BETWEEN >>>DIV | SPAN<<<
+
+          @) <span> 
+
+               * inline element
+
+               * doesn't start on a new line 
+
+               * used to style small parts of text
+
+               * can't contain block elements {should NOT put <h1>,<p>,<div> inside} 
+
+          <span> inline container to group elements for styling purposes</span>     
+
+              <h1>
+                <span style="background-color: red">THis is sapn title </span>
+              </h1>    
+
+......................................................................................
+
+          @) <div>           
+
+
+             ❌ <div> inside <h1> - wrong move - 💀 
+              
+
+              <h1>
+                  <div style="background-color: aqua;">this is div title</div>
+              </h1>
+
+               |_This is invalid HTML 
+
+
+        => REASON - <div> is a block-level element
+
+              * A block element cannot live inside a haeding tag(h1,h2,etc...)
+
+              * Browser will auto-fix it by breaking the structure(so it won't behave how you expect)        
+
+
+            💯 Correct Way to Use DIV  
+
+        => if you wanna style a title with a <div> , you do it like this -
+
+           OPTION 1 - keep div OUTSIDE the heading 
+
+                      [
+
+              <div style="background-color: aqua;">
+                  <h1>this is div title</h1>
+              </div>
+
+                      ]    
+
+
+           OPTION 2 - style the heading directly-(Easier, cleaner) 
+
+                      [
+
+              <h1 style="background-color: aqua;">this is div title</h1>
+
+
+                      ]             
+
+
+......................................................................................
+
+  
+                                🧠 QUICK SUMMARY
+
+
+                  <SPAN> - 
+
+                   # Inline 
+
+                   # For text-level styling
+
+                   # okay inside heading 
+
+                   # NOT for big layout blocks
+
+
+                 <DIV> - 
+
+                   # Block    
+
+                   # For layout + big sections 
+
+                   # Should NOT be inside <h1>
+
+                   # Wraps larger areas , not small  words           
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+ 
+              

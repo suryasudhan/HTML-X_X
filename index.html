@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="sudhan" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML</title>
+  </head>
+  <body>
+    <h1>HTML : hyper text markup language</h1>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet,
+      consectetur adipisicing elit. Nisi atque exercitationem quaerat quia eaque
+      &nbsp; &gt; &lt;voluptate optio, itaque porro tempora odio amet tenetur
+      voluptates in nemo nam ad dolorem delectus accusamus!
+    </p>
+    <p>Don’t forget to <mark>save your work</mark>.</p>
+    <time datetime="2025-01-15">Jan 15</time>
+
+    <!-- creating simple table   -->
+    <!-- [horizontal is ROW][vertical is COLUMN] -->
+
+    <table border="3">
+      <tr>
+        <th>NAME</th>
+        <th>ANIME</th>
+      </tr>
+
+      <tr>
+        <td>mate</td>
+        <td>fire force</td>
+      </tr>
+
+      <tr>
+        <td>arthur</td>
+        <td>soul eater</td>
+      </tr>
+    </table>
+
+    <br />
+    <!-- next stage of table  -->
+    <table border="3">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Price</th>
+          <th>Qty</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Burger</td>
+          <td>120</td>
+          <td>2</td>
+        </tr>
+
+        <tr>
+          <td>Fries</td>
+          <td>80</td>
+          <td>1</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td>Total</td>
+          <td>200</td>
+          <td>—</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <br /><br />
+    <!-- 📐 Example With Merged Cells (This One Helps You Understand) -->
+    <table border="4">
+      <tr>
+        <th>name</th>
+        <th colspan="2">Marks</th>
+      </tr>
+      <tr>
+        <td>Mate</td>
+        <td>JS</td>
+        <td>95</td>
+      </tr>
+
+      <tr>
+        <td>Bro</td>
+        <td>React</td>
+        <td>88</td>
+      </tr>
+    </table>
+
+    <br /><br />
+    <!-- forms  -->
+    <form>
+      <fieldset>
+        <legend><strong>details</strong></legend>
+        <label for="first name">enter your name</label>
+        <input type="text" name="" id="" placeholder="" required />
+      </fieldset>
+    </form>
+
+    <!-- praticing the <input> -->
+    <input type="text " placeholder="enter your name " />
+    <input type="password" />
+    <input type="email" />
+    <input type="number" />
+    <input type="checkbox" /> i agree
+    <input type="radio" name="gender" value="male" />Male
+    <input type="radio" name="gender" value="female" />Female
+    <input type="submit" value="submit" />
+    <!-- TEXT-AREA -->
+    <textarea rows="4" cols="30"></textarea><br /><br />
+    <!-- <select> & <option> — Dropdown Menu -->
+    <select>
+      <option>select country</option>
+      <option>Japan</option>
+      <option>amarica</option>
+    </select>
+    <!-- button -->
+    <input type="submit" />
+    <button type="submit">Send</button>
+
+    <br /><br />
+    <hr />
+    <br /><br />
+    <!-- complete forms -->
+    <form action="/signup" method="POST">
+      <label for="name">Name:</label>
+      <input id="name" type="text" required />
+
+      <label for="email">Email:</label>
+      <input id="email" type="email" required />
+
+      <label for="pass">Password:</label>
+      <input id="pass" type="password" required />
+
+      <label>Gender:</label>
+      <input type="radio" name="gender" value="male" /> Male
+      <input type="radio" name="gender" value="female" /> Female
+
+      <label for="bio">Bio:</label>
+      <textarea id="bio"></textarea>
+
+      <button type="submit">Register</button>
+    </form>
+
+    <!--  -->
+    <br />
+    <!--  -->
+    <br />
+    <!--  -->
+    <!--  ......................................................... -->
+    <!-- FORMS EX : 1  -->
+    <label for="food"> FOODS LIST</label> <br />
+    &nbsp; &nbsp;
+
+    <select name="food" id="food">
+      <!--  -->
+      <optgroup label="TIFFIN">
+        <option value="idily">idily</option>
+        <option value="poori">poori</option>
+        <option value="dosai">dosai</option>
+      </optgroup>
+
+      <!--  -->
+      <optgroup label="LUNCH">
+        <option value="briyani">briyani</option>
+        <option value="meals">meals</option>
+        <option value="chapathi">chapathi</option>
+      </optgroup>
+      <!--  -->
+      <optgroup label="DINNER">
+        <option value="noodels">noodels</option>
+        <option value="nan">nan</option>
+        <option value="icecream">icecream</option>
+      </optgroup>
+    </select>
+
+    <!--  -->
+    <!--  -->
+    <br /><br />
+    <!--  -->
+    <!-- forms ex : 2 -->
+    <!-- list and id should be same as it xxxx -->
+    <label for="favfood">FAV FOOD : </label> <br /><br />
+    &nbsp; &nbsp;
+    <input type="text" name="favfood" id="favfood" list="food-list" />
+    <datalist id="food-list">
+      <option value="magiee"></option>
+      <option value="gulab jation"></option>
+      <option value="pizaa"></option>
+      <option value="kfc "></option>
+      <option value="others"></option>
+    </datalist>
+
+    <!--  -->
+    <br /><br />
+    <!-- ...................................................................... -->
+
+    <!-- forms ex : 3 -->
+    <!-- radio -->
+    <fieldset>
+      <legend>
+        <strong>EDU-DETAILS</strong>
+      </legend>
+
+      <p>
+        <label for="10th">10th</label>
+        <input type="radio" name=" education" id="10th" value="10th" />
+      </p>
+      <p>
+        <label for="12th">12th</label>
+        <input type="radio" name=" education" id="12th" value="12th" />
+      </p>
+      <p>
+        <label for="degree">Degree</label>
+        <input type="radio" name=" education" id="degree" value="degree" />
+      </p>
+    </fieldset>
+    <!--  -->
+    <br /><br />
+    <!-- ...................................................................... -->
+
+    <!-- forms ex : 4 -->
+    <!-- check-box -->
+    <fieldset>
+      <legend><strong>SKILS</strong></legend>
+      <p>
+        <label for="html">HTML</label>
+        <input type="checkbox" name="html" id="html" value="html" />
+      </p>
+      <p>
+        <label for="css">CSS</label>
+        <input type="checkbox" name="css" id="css" value="css" />
+      </p>
+      <p>
+        <label for="js">JAVASCRIPT</label>
+        <input type="checkbox" name="js" id="js" value="js" />
+      </p>
+    </fieldset>
+    <!-- span -->
+    <h1>
+      <span style="background-color: red">THis is sapn title </span>
+    </h1>
+  </body>
+</html>
